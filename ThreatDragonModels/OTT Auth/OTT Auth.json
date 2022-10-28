@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "title": "OTT Auth",
+    "owner": "Fabian Kirchhoff, Martin Bende"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Fabian Kirchhoff"
+      },
+      {
+        "name": "Martin Bende"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "OTT Auth",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "STRIDE",
+        "id": 0
+      }
+    ]
+  }
+}
