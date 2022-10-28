@@ -317,8 +317,8 @@
                 "height": 80
               },
               "position": {
-                "x": 311,
-                "y": 1
+                "x": 319,
+                "y": 10
               },
               "angle": 0,
               "id": "c6e559e2-9b10-40d0-be86-6ff958fa9c15",
@@ -848,6 +848,239 @@
                 }
               ],
               "z": 24,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 35,
+                "y": 3
+              },
+              "target": {
+                "x": 39,
+                "y": 1
+              },
+              "vertices": [
+                {
+                  "x": 32,
+                  "y": 7
+                },
+                {
+                  "x": 9,
+                  "y": 100
+                },
+                {
+                  "x": 51,
+                  "y": 273
+                },
+                {
+                  "x": 311,
+                  "y": 287
+                },
+                {
+                  "x": 505,
+                  "y": 275
+                },
+                {
+                  "x": 564,
+                  "y": 62
+                },
+                {
+                  "x": 539,
+                  "y": 11
+                },
+                {
+                  "x": 466,
+                  "y": 1
+                }
+              ],
+              "id": "48c7a09a-c6f5-412b-8e3a-7a2a0056d6ac",
+              "z": 25,
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.9595198362338712,
+                    "offset": -17.461518695052476
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Firma Allsecure",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 586,
+                "y": 293
+              },
+              "target": {
+                "x": 579,
+                "y": 297
+              },
+              "vertices": [
+                {
+                  "x": 634,
+                  "y": 32
+                },
+                {
+                  "x": 1034,
+                  "y": 34
+                },
+                {
+                  "x": 1355,
+                  "y": 94
+                },
+                {
+                  "x": 1318,
+                  "y": 313
+                }
+              ],
+              "id": "bd93f20b-1c77-4c11-b441-4a20346e8e99",
+              "z": 26,
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.312533549730229,
+                    "offset": 30.51035818096394
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "externe Service für Te\nlefonnummerauflösu\nng",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 455,
+                "y": 497
+              },
+              "target": {
+                "x": 463,
+                "y": 509
+              },
+              "vertices": [
+                {
+                  "x": 454,
+                  "y": 358
+                },
+                {
+                  "x": 429,
+                  "y": 347
+                },
+                {
+                  "x": 111,
+                  "y": 319
+                },
+                {
+                  "x": 54,
+                  "y": 519
+                }
+              ],
+              "id": "d36f4789-6768-44f4-95e5-5a22be2eb8f5",
+              "z": 27,
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Telefonnumer-OTT",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 139,
+                "y": 10
+              },
+              "angle": 0,
+              "id": "57732a0e-8ef3-41eb-af37-954012e73bcf",
+              "z": 28,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Export Prozess"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "c6e559e2-9b10-40d0-be86-6ff958fa9c15"
+              },
+              "target": {
+                "id": "57732a0e-8ef3-41eb-af37-954012e73bcf"
+              },
+              "vertices": [],
+              "id": "f387ba5b-5e0a-4ca0-b2e6-630c3e132217",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 28",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 29,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
