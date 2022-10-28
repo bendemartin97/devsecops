@@ -392,6 +392,16 @@
                   "description": "Durch gefälschten Identität kann der Angreifer die Daten im Datenbank verändern.\n\nPriority: High, weil der Angreifen kann unbemerkt die Daten ändern, in schlimmsten Fall das komplette Datenbank löschen",
                   "threatId": "80c1419d-ff15-4e66-932e-00a0b3f326c3",
                   "mitigation": "Gute Rollenverteilung"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Daten in Plaintext gespeichert",
+                  "description": "Der Angreifer kann die Daten mitlesen",
+                  "mitigation": "Verwenden von kryptografischen Protokollen",
+                  "threatId": "664ba63f-d386-438f-af34-41761888388f"
                 }
               ],
               "attrs": {
