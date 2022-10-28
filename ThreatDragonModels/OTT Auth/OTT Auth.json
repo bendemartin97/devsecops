@@ -27,22 +27,34 @@
                 "height": 100
               },
               "position": {
-                "x": 11,
-                "y": 146
+                "x": 16,
+                "y": 131
               },
               "angle": 0,
               "id": "0eeb40d7-63b1-4274-8e1d-fd9898eb613e",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Angreifern gaukeln eine falsche Identität",
+                  "description": "Der Angreifer kann die Session ID von einem eingeloggten User besitzen\n\nPriority:High: Der Angreifer kann alle Action nach der User Berechtigung ausführen. In schlimmsten Fall alle Daten löschen",
+                  "threatId": "c49854ea-536b-4eae-a690-77e6731a8a48",
+                  "mitigation": "Session IDs nicht in Plaintext. Session IDs alle 10 Minuten neu generieren lassen(wie beim Banking)"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Login System-\nWebapp +\nMobile App"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -59,16 +71,38 @@
               "angle": 0,
               "id": "57378acb-4b07-452f-99e5-e2cf3bf485ed",
               "z": 2,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Elevation of privilege",
+                  "title": "Authorization",
+                  "description": "Der Angreifer kann das Device für das Oauth2 klauen\n\nPriority: High, weil der Angreifen kann unbemerkt mit dem OTT anmelden",
+                  "threatId": "40e118b7-784f-475a-b556-412208756890",
+                  "mitigation": "Device Passwort schützen"
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "title": "Verweigerung",
+                  "description": "Der Angreifer kann leugnen, dass er für den Angriff verantwortlich ist.\n\nPriority:High, weil der Angreifer nicht zu Rechenschaft gezogen werden kann",
+                  "type": "Repudiation",
+                  "threatId": "4598ad65-6820-45d2-892a-e31a726dc71e",
+                  "mitigation": "Verwenden von Signaturen und Timestamps"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "2-Faktor Auth"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -85,16 +119,28 @@
               "angle": 0,
               "id": "b0a2ccf1-85fa-4afa-b81a-7b38690c138d",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "DoS",
+                  "description": "Mit sehr vielen Anfragen an dem Telefonnummer API das API unerreichbar machen.\n\nPriority:Low, weil der Angreifer erst die IP von API kennen muss",
+                  "threatId": "6ac77317-97f0-436c-acfb-ec48bf2ea8cd",
+                  "mitigation": "bessere Skalierung"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Telefonnumer API\nGateway"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -189,16 +235,28 @@
               "angle": 0,
               "id": "8465990b-5146-4a04-b6f5-4ffe8c5484e8",
               "z": 7,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "title": "DoS",
+                  "type": "Denial of service",
+                  "description": "Viele Anfragen an dem Kundentelefonanbieter um das Datenbank unerreichbar zu machen. \n\nPriority: Low, weil der Angreifer muss die IP von dem Datenbank kennen",
+                  "threatId": "5ab0db4f-13c0-4142-bc8d-4a1354449ea9",
+                  "mitigation": "Load Balancer"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Telefonnumerdatenbank"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -317,22 +375,34 @@
                 "height": 80
               },
               "position": {
-                "x": 319,
-                "y": 10
+                "x": 320,
+                "y": 12
               },
               "angle": 0,
               "id": "c6e559e2-9b10-40d0-be86-6ff958fa9c15",
               "z": 11,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "Integrität",
+                  "description": "Durch gefälschten Identität kann der Angreifer die Daten im Datenbank verändern.\n\nPriority: High, weil der Angreifen kann unbemerkt die Daten ändern, in schlimmsten Fall das komplette Datenbank löschen",
+                  "threatId": "80c1419d-ff15-4e66-932e-00a0b3f326c3",
+                  "mitigation": "Gute Rollenverteilung"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Log-Datenbank"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1003,16 +1073,28 @@
               "angle": 0,
               "id": "57732a0e-8ef3-41eb-af37-954012e73bcf",
               "z": 28,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Vertrauchlichkeit",
+                  "description": "Durch gefälschten Identität kann der Angreifer die exportierten Daten besitzen. \n\nPriority: High, weil der Angreifer alle gelogte Daten zu sehen bekommt",
+                  "threatId": "b2597797-1ebe-49bc-ba86-1ca49cc45e66",
+                  "mitigation": "Die Daten Passwort geschützt exportieren"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Export Prozess"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1134,16 +1216,28 @@
               "angle": 0,
               "id": "23a44485-fa0d-4402-86c7-f00069dbcae7",
               "z": 31,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Schwache Kryptographie",
+                  "description": "Der Angreifer kann die Anfrage encrypten und die Daten auslesen\n\nPriority:Low, weil der Angreifer für die Encryptung den Schlüssen bräuchte.",
+                  "threatId": "00a7bf37-2f63-4b41-8ba5-8a385f244647",
+                  "mitigation": "sicherere Schlüssel"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Kryptographie"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1241,16 +1335,28 @@
               "angle": 0,
               "id": "a233660f-2c3b-46a1-b0bc-bb20d260eb78",
               "z": 34,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "title": "Passwort an dem Monitor geklebt",
+                  "type": "Spoofing",
+                  "description": "Der Angreifer kann das Passwort, das auf einem Zettel auf dem Monitor geklebt wurde, easy ablesen und anmelden",
+                  "mitigation": "Schulung (Personal anschreien, wenn man das sieht)",
+                  "threatId": "4171fecc-5be0-4f7c-adc3-6b193d5f0e24"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "User"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
